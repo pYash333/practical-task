@@ -1,0 +1,13 @@
+footer {
+  @include section-vpadding;
+  .footer-text {
+    color: $black-color;
+    .footer-links {
+      color: $black-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

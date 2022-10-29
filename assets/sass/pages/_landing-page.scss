@@ -1,0 +1,243 @@
+// Hero banner section css
+.hero-banner {
+  .hero-banner-title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+    color: $white-color;
+    @include screen-lg {
+      font-size: 2.5rem;
+    }
+    @include screen-sm {
+      font-size: 2.5rem;
+    }
+  }
+  .hero-banner-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: $white-color;
+    margin-bottom: 6rem;
+    @include screen-sm {
+      font-size: 1.6rem;
+    }
+  }
+  .hero-banner-imgs-wrapper {
+    margin-bottom: 25rem;
+    .hero-banner-img {
+      height: 3rem;
+    }
+  }
+  .hero-banner-links {
+    color: $blue-light-color;
+    font-size: 1.4rem;
+    @include screen-xl {
+      font-size: 1.2rem;
+    }
+    a {
+      color: $blue-light-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .form-wrapper {
+    background-color: $white-color;
+    padding: 3rem 5rem;
+    @include screen-sm {
+      padding: 3rem 2rem;
+    }
+    h3 {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      color: $gray-color;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+    .form-input-wrapper {
+      .form-label {
+        font-size: 1.4rem;
+        color: $gray-color;
+      }
+      .form-input {
+        border-color: $blue-light-color;
+        height: 4.4rem;
+        font-size: 1.6rem;
+      }
+    }
+    .submit-btn {
+      background-color: $blue-color;
+      color: $white-color;
+      font-size: 1.8rem;
+      font-weight: 700;
+      height: 5.5rem;
+      border-radius: 3px;
+      border: 2px solid $blue-color;
+      margin-bottom: 7rem;
+      &:hover {
+        background-color: $white-color;
+        color: $blue-color;
+      }
+    }
+    .form-bottom {
+      color: $gray-color;
+      font-size: 1.4rem;
+      a {
+        color: $dark-blue-color;
+      }
+    }
+  }
+}
+
+// About section css
+.aboutUs-wrapeer {
+  @include section-hspacing;
+  @include section-vpadding;
+  .section-title {
+    @include section-title;
+  }
+  .about-text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+  }
+}
+
+// Journey section css
+.joureny-section {
+  background: url(../images/background.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @include section-vpadding;
+  @include screen-md {
+    background-size: cover;
+  }
+  @include screen-md {
+    padding-bottom: 0;
+  }
+  .section-title {
+    @include section-title;
+    margin-bottom: 5rem;
+    @include screen-md {
+      margin-bottom: 5rem;
+    }
+  }
+  .journey-col {
+    margin-bottom: 10rem;
+  }
+  .card {
+    width: 24rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 10px rgba(188, 206, 214, 0.5);
+    padding: 0 1rem;
+    position: relative;
+    @include screen-xl {
+      width: 20rem;
+    }
+    @include screen-lg {
+      width: 17rem;
+      padding: 0;
+    }
+    @include screen-md {
+      width: 24rem;
+      margin-top: 5rem;
+    }
+    .arrow-img {
+      width: 10rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -5rem;
+      @include screen-lg {
+        width: 6rem;
+        margin-top: -3rem;
+      }
+      @include screen-md {
+        width: 10rem;
+        left: 28%;
+        top: -3rem;
+        transform: rotate(90deg);
+      }
+    }
+    .card-body {
+      color: $gray-color;
+      margin-top: 4.5rem;
+      @include screen-lg {
+        margin-top: 2.5rem;
+      }
+      .card-title {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: bold;
+        @include screen-lg {
+          font-size: 1.6rem;
+        }
+      }
+      .card-text {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        @include screen-lg {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+// Testimonial section css
+.testimonial-section {
+  @include section-vpadding;
+  margin-top: -12rem;
+  @include screen-md {
+    margin-top: 0;
+  }
+  .testimonial-img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    box-shadow: 0 5px 10px rgba(188, 206, 214, 0.5);
+  }
+  .testimonial-logo {
+    width: 13rem;
+  }
+  .card-text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: $gray-color;
+  }
+  .testimonial-name {
+    color: $gray-color;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+  .testimonial-designation {
+    @extend .testimonial-name;
+    color: $gray-light-color;
+  }
+}
+
+// Brand section css
+
+.brand-section {
+  @include section-vpadding;
+  @include screen-md {
+    padding-bottom: 0;
+  }
+  .brand-img {
+    height: 3.5rem;
+    @include screen-lg {
+      height: 2rem;
+    }
+    @include screen-md {
+      height: 3.5rem;
+      margin: 2rem 0;
+    }
+  }
+}

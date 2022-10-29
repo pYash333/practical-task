@@ -1,0 +1,11 @@
+@import "base/mediaQueries";
+@import "base/mixins";
+@import "base/base";
+
+// common scss
+
+@import "common/header";
+@import "common/footer";
+
+// pages
+@import "pages/landing-page";
